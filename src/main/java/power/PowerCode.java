@@ -41,7 +41,7 @@ public class PowerCode {
 
     @Test
     private void testCase02() {
-        this.createPowerCode(-10, 40);
+        this.createPowerCode(1, 40);
     }
 
     private void createPowerCode(int index, int endcode) {
