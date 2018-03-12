@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Test suite" verbose="1">
+    <test name="Test suite">
+        <classes>
+            <class name="power.PowerCode"/>
+        </classes>
+    </test>
+</suite>
