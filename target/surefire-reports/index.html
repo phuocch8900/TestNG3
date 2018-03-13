@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Test_suite">
-                    <span>C:\Users\phuocch\Documents\TestNG3\testng.xml</span>
+                    <span>C:\Users\phuocch\workspace\TestNG3\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -147,13 +147,16 @@
         </div> <!-- panel Test_suite -->
         <div panel-name="test-xml-Test_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\phuocch\Documents\TestNG3\testng.xml</span>
+            <span class="header-content">C:\Users\phuocch\workspace\TestNG3\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite verbose=&quot;0&quot; name=&quot;Test suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;testerport.Report&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test name=&quot;Test suite&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;power.PowerCode&quot;/&gt;
@@ -200,7 +203,7 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testCase02')
 data.setCell(0, 2, 'power.PowerCode')
-data.setCell(0, 3, 0);
+data.setCell(0, 3, 16);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testCase01')
 data.setCell(1, 2, 'power.PowerCode')
@@ -209,7 +212,7 @@ window.suiteTableData['Test_suite']= { tableData: data, tableDiv: 'times-div-Tes
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
+              <span class="suite-total-time">Total running time: 16 ms</span>
               <div id="times-div-Test_suite">
               </div> <!-- times-div-Test_suite -->
             </div> <!-- times-div -->
@@ -240,18 +243,18 @@ return data;
                 <span class="method-name">sayHello</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
-              <div class="configuration-class after">
-                <span class="method-name">sayGoodbye</span>
-                <span class="method-start">31 ms</span>
-              </div> <!-- configuration-class after -->
               <div class="test-method">
                 <span class="method-name">testCase01</span>
-                <span class="method-start">31 ms</span>
+                <span class="method-start">13 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testCase02</span>
-                <span class="method-start">31 ms</span>
+                <span class="method-start">13 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">sayGoodbye</span>
+                <span class="method-start">29 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

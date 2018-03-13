@@ -1,1 +1,5 @@
+object\PropertyLoader.class
+object\TestResult.class
 power\PowerCode.class
+testerport\Report.class
+testerport\GenerateReport.class

@@ -14,12 +14,12 @@ import java.util.Random;
 public class PowerCode {
     @BeforeClass
     private void sayHello() {
-        System.out.println("Chào mừng đến với chương trình xổ số PowerCode");
+        System.out.println("=======================Hello Mega=============================");
     }
 
     @AfterClass
     private void sayGoodbye() {
-        System.out.println("Cám ơn đến vơi chương trình xổ số và xin hẹn gặp lại");
+        System.out.println("=====================Bye Bye================================");
     }
 
     public static int getRandomNumberInRange(int min, int max) {
@@ -41,7 +41,7 @@ public class PowerCode {
 
     @Test
     private void testCase02() {
-        this.createPowerCode(1, 40);
+        this.createPowerCode(-5, 40);
     }
 
     private void createPowerCode(int index, int endcode) {
@@ -53,7 +53,7 @@ public class PowerCode {
 
         for (int i = 0; i < 6; i++) {
             if (list.get(i) < 0) {
-                Assert.fail("Ket qua so xo so khong the ra am: " + list.get(i));
+                Assert.fail(list.get(i) + "<0");
             }
             System.out.println(list.get(i));
         }

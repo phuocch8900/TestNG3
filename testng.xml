@@ -5,4 +5,7 @@
             <class name="power.PowerCode"/>
         </classes>
     </test>
+    <listeners>
+        <listener class-name="testerport.Report"/>
+    </listeners>
 </suite>
