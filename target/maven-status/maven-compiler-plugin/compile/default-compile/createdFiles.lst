@@ -1,5 +1,6 @@
 object\PropertyLoader.class
 object\TestResult.class
 power\PowerCode.class
+constant\CommonConstant.class
 testerport\Report.class
 testerport\GenerateReport.class
