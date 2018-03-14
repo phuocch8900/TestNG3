@@ -187,7 +187,7 @@ public class GenerateReport implements IReporter {
     }
 
     private void mapResultByTestName(Set<ITestResult> results, String status) {
-
+        String testName;
         TestResult testResult;
         for (ITestResult result : results) {
             testResult = new TestResult(this.getTestId(result.getName()), status);
@@ -198,6 +198,7 @@ public class GenerateReport implements IReporter {
         }
     }
 
+    //get Id
     private int getTestId(String testName) {
         Pattern p = Pattern.compile("[0-9]+$");
         Matcher m = p.matcher(testName);

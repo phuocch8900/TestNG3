@@ -11,7 +11,13 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
+import static constant.CommonConstant.GROUPA;
+import static constant.CommonConstant.GROUPB;
+
+
 public class PowerCode {
+
+
     @BeforeClass
     private void sayHello() {
         System.out.println("=======================Hello Mega=============================");
@@ -32,16 +38,16 @@ public class PowerCode {
         return r.nextInt((max - min) + 1) + min;
     }
 
-    @Test
+    @Test(groups = GROUPA)
     private void testCase01()
 
     {
         this.createPowerCode(1, 50);
     }
 
-    @Test
+    @Test(groups = GROUPB)
     private void testCase02() {
-        this.createPowerCode(-5, 40);
+        this.createPowerCode(5, 50);
     }
 
     private void createPowerCode(int index, int endcode) {
